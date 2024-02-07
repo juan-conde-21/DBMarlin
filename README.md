@@ -98,35 +98,35 @@ Virtual Server:
 
 
 
-  1. Los recursos seran desplegados dentro del namespace default.
+1. Los recursos seran desplegados dentro del namespace default.
   
-  2. Aplicar la configuracion de base de datos.
+2. Aplicar la configuracion de base de datos.
 
-    kubectl apply -f database.yaml
+        kubectl apply -f database.yaml
 
-  3. Aplicar la configuracion del fontend.
+3. Aplicar la configuracion del fontend.
  
-    kubectl apply -f frontend.yaml
+        kubectl apply -f frontend.yaml
 
-  4. Aplicar la configuracion del agente DB Marlin ( Reemplazar la ip publica del servidor DB Marlin y aplicar la configuracion, para este ejemplo es la ip 163.107.83.92 )
+4. Aplicar la configuracion del agente DB Marlin ( Reemplazar la ip publica del servidor DB Marlin y aplicar la configuracion, para este ejemplo es la ip 163.107.83.92 )
 
-    kubectl apply -f marlin-agent.yaml
+        kubectl apply -f marlin-agent.yaml
 
-  5. Verificar recursos desplegados:
+5. Verificar recursos desplegados:
  
-    kubectl get all
+        kubectl get all
 
     ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/19608ed5-2d5a-4b05-bc01-0c3937300047)
 
-  6. Ejecutar la validacion para la ip publica del frontend, en el ejemplo 20.171.241.74
+6. Ejecutar la validacion para la ip publica del frontend, en el ejemplo 20.171.241.74
 
-    Operación GET para listar los contactos registrados
+   Operación GET para listar los contactos registrados
 
-    ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/9af7d201-6ef1-4efa-bd03-c3aed7cd570d)
+   ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/9af7d201-6ef1-4efa-bd03-c3aed7cd570d)
 
-    Operación POST para registrar nuevos contactos
+   Operación POST para registrar nuevos contactos
  
-    ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/6eb4760a-68c1-4cef-b512-d29c47bbc9ac)
+   ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/6eb4760a-68c1-4cef-b512-d29c47bbc9ac)
 
 
 
