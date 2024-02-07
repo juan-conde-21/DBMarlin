@@ -84,8 +84,6 @@ Setup DBMarlin server
 
 # Configuracion de ambiente de pruebas en AKS
 
-![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/b22f88bc-00f8-4430-82f2-f247cf3c02ca)
-
 Componentes:
 
 Azure Kubernetes service:
@@ -96,7 +94,9 @@ Azure Kubernetes service:
 Virtual Server:
 - DB Marlin server implemementado en los pasos anteriores
 
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/b22f88bc-00f8-4430-82f2-f247cf3c02ca)
 
+Procedimiento:
 
 1. Los recursos seran desplegados dentro del namespace default.
   
