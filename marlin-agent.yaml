@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbmarlin-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dbmarlin-agent
+  template:
+    metadata:
+      labels:
+        app: dbmarlin-agent 
+    spec:
+      containers:
+      - name: dbmarlin-agent
+        image: dbmarlin/dbmarlin-agent:latest
+        env:
+        - name: DBMARLIN_AGENT_NAME
+          value: "k8s-test-agent"
+        - name: DBMARLIN_ARCHIVER_URL
+          value: "http://163.107.83.92:9090/archiver"
+        resources:
+          limits:
+            cpu: "1"
+            memory: "512Mi"
+          requests:
+            cpu: "0.5"
+            memory: "256Mi"
+        livenessProbe:
+          tcpSocket:
+            port: 9080
+          initialDelaySeconds: 60
+          periodSeconds: 30
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: staging1-external-service
+spec:
+  type: ExternalName
+  externalName: 163.107.83.92
+  ports:
+  - protocol: TCP
+    port: 9090
+    targetPort: 9090
