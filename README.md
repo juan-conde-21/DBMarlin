@@ -80,6 +80,9 @@ Setup DBMarlin server
     tomcat      (Running)
     postgres    (Running)
 
+# Configuracion de ambiente de pruebas en AKS
+
+1. 
 
 
 
