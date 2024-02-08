@@ -128,7 +128,7 @@ Procedimiento:
  
    ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/6eb4760a-68c1-4cef-b512-d29c47bbc9ac)
 
-7. Para realizar el monitoreo mediante el agente DB Marlin en la BD Mysql se requiere de la creacion de un usuario con los permisos de lectura sobre las bases de datos. Para ello ingresar al pod de la BD y ejecutar las siguientes sentencias.
+7. Para realizar el monitoreo mediante el agente DB Marlin en la BD Mysql se requiere de la creacion de un usuario con los permisos de lectura sobre las bases de datos. Para ello ingresar al pod de la BD y ejecutar las siguientes sentencias. ![documentacion](https://docs.dbmarlin.com/docs/Monitored-Technologies/Databases/mysql)
 
        *Colocar el nombre del pod mysql correspondiente en su ambiente.
        kubectl exec -it mysql-5b8854c844-74vrv -- bash
@@ -149,11 +149,28 @@ Procedimiento:
 
 
 
+9. Configurar la extension de DB Marlin en su navegador web Edge o Chrome. Colocar la url del servidor DB Marlin como se muestra en la imagen.
+
+
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/299f9595-e1dd-45c0-94d3-3f6688605350)
+
+10. Verificar las trazas capturadas en instana y ubicar las sentencias SQL donde se mostrara el icono que enlaza instana con DB Marlin para obtener mayor detalle a nivel de base de datos.
+
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/802191de-08c2-49b2-bc71-bc0b83712916)
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/a997a03d-dfe1-41f1-8359-76845f15d986)
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/6b9662df-7375-480d-8a33-b05ac710590e)
+
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/a504b674-1f9d-444a-a286-cd1cf797cf54)
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/d488cc1f-2b08-427c-b39e-84dee7e6387e)
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/ad9f0346-ad59-4a5e-a3e3-b9879429fbca)
 
 
 
 
- 
+
+
+
+
 
   
 
