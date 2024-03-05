@@ -94,6 +94,9 @@ Azure Kubernetes service:
 Virtual Server:
 - DB Marlin server implemementado en los pasos anteriores
 
+![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/c22b386e-4fda-46cf-9382-312d38b45bb4)
+
+
 ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/b22f88bc-00f8-4430-82f2-f247cf3c02ca)
 
 Procedimiento:
