@@ -128,7 +128,7 @@ Procedimiento:
  
    ![image](https://github.com/juan-conde-21/DBMarlin/assets/13276404/6eb4760a-68c1-4cef-b512-d29c47bbc9ac)
 
-7. Para realizar el monitoreo mediante el agente DB Marlin en la BD Mysql se requiere de la creacion de un usuario con los permisos de lectura sobre las bases de datos. Para ello ingresar al pod de la BD y ejecutar las siguientes sentencias. ![documentacion](https://docs.dbmarlin.com/docs/Monitored-Technologies/Databases/mysql)
+7. Para realizar el monitoreo mediante el agente DB Marlin en la BD Mysql se requiere de la creacion de un usuario con los permisos de lectura sobre las bases de datos. Para ello ingresar al pod de la BD y ejecutar las siguientes sentencias. [documentacion](https://docs.dbmarlin.com/docs/Monitored-Technologies/Databases/mysql)
 
        *Colocar el nombre del pod mysql correspondiente en su ambiente.
        kubectl exec -it mysql-5b8854c844-74vrv -- bash
